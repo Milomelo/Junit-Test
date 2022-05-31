@@ -23,7 +23,8 @@ public class Book {
 
 
     @Builder
-    public Book(String title, String author) {
+    public Book(Long id, String title, String author) {
+        this.id = id;
         this.title = title;
         this.author = author;
     //필요한 생성자만 만든다. 
